@@ -74,7 +74,7 @@ $(window).on("load", function() {
       }
   
       this.terCtx.beginPath();
-      for (var i = 0; i <= width; i++) {
+      for (var i = 0; i <= width; i+=5) {
         if (i === 0) {
           this.terCtx.moveTo(0, this.points[0]);
         } else if (this.points[i] !== undefined) {
@@ -97,14 +97,14 @@ $(window).on("load", function() {
       this.size = Math.random() * 2;
       this.speed = Math.random() * 0.05;
       this.x = options.x;
-      this.y = options.y;
+      this.y = options.y / 1.9;
     }
   
     Star.prototype.reset = function() {
       this.size = Math.random() * 2;
       this.speed = Math.random() * 0.05;
       this.x = width;
-      this.y = Math.random() * height;
+      this.y = Math.random * height ;
     };
   
     Star.prototype.update = function() {
