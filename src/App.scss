@@ -6,7 +6,6 @@ $steps: 20;
   src: url("./fonts/baron_neue-webfont.woff");
 }
 
-
 html,
 body {
   height: 100%;
@@ -35,7 +34,7 @@ a {
   width: 100%;
 }
 
-section{
+section {
   width: 100%;
   height: 100%;
   background-color: white;
@@ -113,14 +112,13 @@ canvas {
   position: fixed;
   height: 60px;
   width: 100%;
-  background-color: black;
-  display: table;
+  background-color: #101010;
+  display: flex;
+  align-items: center;
 }
 
 .nav-options-container {
   padding: 30px;
-  display: table-cell;
-  vertical-align: middle;
 }
 
 .nav a {
@@ -152,16 +150,133 @@ canvas {
   transition: all 0.3s ease-in-out;
 }
 
-nav a:hover:before{
+nav a:hover:before {
   width: 100%;
 }
 
-nav .selected:before{
+nav .selected:before {
   width: 100%;
 }
 
-.nav-mobile-options-container{
+.nav-mobile-options-container {
+  display: none;
+  background: #101010;
+  width: 100%;
+  position: fixed;
+  box-sizing:border-box;
+  top: 60px;
+}
+
+.nav-mobile-options-container a{
+  float: left;
+  margin-right: 100%;
+  display: block;
+  margin-left: 5%;
+  margin-bottom: 30px;
+}
+
+.menu-active{
   display: none;
 }
+
+.nav-mobile{
+  display: none;
+  width: 100%;
+}
+
+.hamburger {
+  left: 0;
+  font-size: 30px;
+  width: 1em;
+  height: 1em;
+  padding: 0;
+  margin-left: 5%;
+  float: left;
+  cursor: pointer;
+  transition: transform .2s ease-in-out;
+  vertical-align: middle;
+
+  border: 0 none;
+  background: transparent;
+}
+
+/**
+ * Button height fix for Firefox
+ */
+.hamburger::-moz-focus-inner {
+  padding: 0;
+  border: 0 none;
+}
+
+/**
+ * Focus fix for Chrome
+ */
+.hamburger:focus {
+  outline: 0;
+}
+
+.hamburger:before,
+.hamburger:after {
+  content: "";
+}
+
+.hamburger:before,
+.hamburger .icon,
+.hamburger:after {
+  display: block;
+
+  width: 100%;
+  height: .2em;
+  margin: 0 0 .2em;
+
+  transition: transform .2s ease-in-out;
+
+  border-radius: .05em;
+  background: white;
+}
+
+/**
+ * Styles for the active `.hamburger` icon
+ */
+.hamburger.active:before,
+.hamburger.active .icon,
+.hamburger.active:after {
+  background: white;
+}
+.hamburger.hamburger-cancel.active .icon {
+  transform: scale(0);
+}
+
+.hamburger.hamburger-cancel.active:before {
+  transform: translateY(.4em) rotate(135deg);
+}
+
+.hamburger.hamburger-cancel.active:after {
+  transform: translateY(-.4em) rotate(-135deg);
+}
+
+/**
+ * Styles for the active `.hamburger` icon
+ */
+
+@media only screen and (max-width: 768px) {
+  .nav-options-container{
+    display: none;
+  }
+
+  .nav-mobile{
+    display: block;
+  }
+
+  .menu-active{
+    display: block;
+  }
+
+  
+}
+
+
+
+
 
 

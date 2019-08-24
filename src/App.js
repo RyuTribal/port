@@ -5,6 +5,7 @@ import normal from "./img/Ivan.png";
 import logic from "./img/Ivan-logic.png";
 import "./js/main.js";
 import "./js/canvas.js";
+import "./js/scroll.js";
 import jQuery from "jquery";
 import $ from "jquery";
 import logo from "./img/logo.png";
@@ -13,6 +14,25 @@ function App() {
   return (
     <div className="App">
       <nav className="nav">
+        <div className="nav-mobile">
+          <button className="hamburger hamburger-cancel">
+            <span className="icon" />
+          </button>
+          <div className="nav-mobile-options-container">
+            <a href="#about" className="nav-mobile-options">
+              About
+            </a>
+            <a href="#exp" className="nav-mobile-options">
+              Experience
+            </a>
+            <a href="#skills" className="nav-mobile-options">
+              Skills
+            </a>
+            <a href="#contact" className="nav-mobile-options">
+              Contact
+            </a>
+          </div>
+        </div>
         <div className="nav-options-container">
           <a href="#about" className="nav-options">
             About
@@ -28,20 +48,6 @@ function App() {
           </a>
         </div>
       </nav>
-      <div className="nav-mobile-options-container">
-        <a href="#about" className="nav-mobile-options">
-          About
-        </a>
-        <a href="#exp" className="nav-mobile-options">
-          Experience
-        </a>
-        <a href="#skills" className="nav-mobile-options">
-          Skills
-        </a>
-        <a href="#contact" className="nav-mobile-options">
-          Contact
-        </a>
-      </div>
       <section className="page intro">
         <div className="intro-content">
           <div className="content-container">
