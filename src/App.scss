@@ -471,10 +471,10 @@ figure {
   padding: 50px;
 }
 
-i.fas,
-i.fab {
+.skill i.fas,
+.skill i.fab {
   display: inline-block;
-  border-radius: 90px;
+  border-radius: 50%;
   background-color: #101010;
   color: #edc27b;
   font-size: 55px;
@@ -494,7 +494,7 @@ i.fab {
 
 .fab-img {
   display: inline-block;
-  border-radius: 90px;
+  border-radius: 50%;
   background-color: #101010;
   color: #edc27b;
   padding: 33px !important;
@@ -522,15 +522,42 @@ i.fab {
   width: 100%;
   border: none;
   border-bottom: 1px solid #8d8d8d;
-  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .input-area {
   width: 100%;
+  padding-top: 20px;
   border: none;
   border-bottom: 1px solid #8d8d8d;
   resize: vertical;
   height: 200px;
+}
+
+.error-field {
+  float: left;
+  text-transform: lowercase;
+  font-family: "baron-neue-regular", "Helvetica", "Arial" !important;
+  color: white;
+  padding: 5px;
+  background: #a63232;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  margin-top: 30px;
+}
+
+.error-active {
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .input-field:focus,
@@ -538,25 +565,87 @@ i.fab {
   outline: none;
 }
 
+.emailOverlay {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  width: 100%;
+  z-index: 9999999999999999;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.email-sending {
+  display: flex;
+}
+
+.emailOverlay .fas {
+  color: #edc27b;
+  font-size: 45px;
+  position: absolute;
+  bottom: 32%;
+  right: 10%;
+  left: 0;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  margin: 6px;
+  border: 6px solid #edc27b;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #edc27b transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .submit-button {
   background: transparent;
   border: 3px solid #edc27b;
   cursor: pointer;
   float: left;
-  letter-spacing: 2px;
   outline: none;
   overflow: hidden;
+  letter-spacing: 2px;
   padding: 25px 80px;
+  display: block;
   z-index: 1;
   position: relative;
   color: #edc27b;
   font-family: "baron-neue-regular", "Helvetica", "Arial" !important;
   text-transform: lowercase;
   font-weight: 400;
+  margin-bottom: 100px;
 }
 
 .submit-button:after {
-  content: '';
+  content: "";
   height: 160px;
   left: 50%;
   opacity: 0;
@@ -566,7 +655,8 @@ i.fab {
   width: 100% !important;
 }
 
-.submit-button:hover:after{
+.submit-button:hover:after,
+.submit-button:focus:after {
   background: #101010;
   -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
   -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
@@ -601,6 +691,15 @@ i.fab {
     padding: 20px;
   }
 
+  .input-container {
+    padding: 20px;
+  }
+
+  .input-container button {
+    float: unset;
+    margin: 0 auto;
+  }
+
   .nav-options-container {
     display: none;
   }
@@ -631,6 +730,10 @@ i.fab {
   .non-intro {
     padding: 0 !important;
   }
+}
+
+.contact {
+  margin-bottom: 100px;
 }
 
 @media only screen and (max-width: 1024px) {
