@@ -9,6 +9,7 @@
     "node-sass": "^4.12.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-reveal": "^1.2.2",
     "react-scripts": "3.1.1",
     "typewriter-effect": "^2.10.0",
     "vara": "^1.2.0"

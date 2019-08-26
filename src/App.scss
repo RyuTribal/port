@@ -24,11 +24,13 @@ a {
 }
 
 p {
-  text-align: left;
   color: #8d8d8d;
   text-transform: lowercase;
   box-sizing: inherit !important;
-  font-family: serif;
+}
+
+.paragraph-container p{
+  text-align: left !important;
 }
 
 a:hover {
