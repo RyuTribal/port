@@ -29,7 +29,7 @@ p {
   box-sizing: inherit !important;
 }
 
-.paragraph-container p{
+.paragraph-container p {
   text-align: left !important;
 }
 
@@ -168,6 +168,10 @@ nav a:hover:before,
 
 nav .selected::before {
   width: 100% !important;
+}
+
+.back-option {
+  margin-left: 3%;
 }
 
 .nav-mobile-options-container {
@@ -671,6 +675,10 @@ figure {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 1;
+}
+
+.pdf-downloader{
+  right: 0 !important;
 }
 
 @media only screen and (max-width: 60em) {
