@@ -1,0 +1,14 @@
+{
+    "vanbot": {
+        "awscloudformation": {
+            "AuthRoleName": "portfolio-vanbot-20190826144559-authRole",
+            "UnauthRoleArn": "arn:aws:iam::686023884246:role/portfolio-vanbot-20190826144559-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::686023884246:role/portfolio-vanbot-20190826144559-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "portfolio-vanbot-20190826144559-deployment",
+            "UnauthRoleName": "portfolio-vanbot-20190826144559-unauthRole",
+            "StackName": "portfolio-vanbot-20190826144559",
+            "StackId": "arn:aws:cloudformation:eu-west-1:686023884246:stack/portfolio-vanbot-20190826144559/74ab1db0-c7ff-11e9-92a0-02925b9a5d4e"
+        }
+    }
+}
