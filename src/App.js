@@ -15,7 +15,7 @@ import itjobs from "./img/itjobs.PNG";
 import huddinge from "./img/huddinge.png";
 import justvalue from "./img/justvalue.PNG";
 import unreal from "./img/unreal.png";
-import maya from "./img/maya.png";
+import blender from "./img/blender.png";
 import cLang from "./img/c++.png";
 import node from "./img/node.png";
 import reactImg from "./img/react.png";
@@ -425,6 +425,7 @@ class App extends Component {
             </div>
           </Bounce>
         </nav>
+        <div className="circular-menu"></div>
         <section className="page intro">
           <div className="intro-content">
             <div className="content-container">
@@ -455,24 +456,24 @@ class App extends Component {
                 <p>
                   Hey.
                   <br /> My name is Ivan Sedelkin and I'm a front-end and
-                  back-end developer with a love for cutting edge technolodgy
+                  back-end developer with a love for cutting edge technology
                   that drives me to try and stay up to date with the newest tech
                   out there.
                 </p>
                 <p>
                   My dream is to work for Square Enix and create games that can
-                  inspire kids the same way Square's games inpired me down this
+                  inspire kids the same way Square's games inspired me down this
                   path so many year ago.
                 </p>
                 <p>
                   I believe web applications and games alike share similarities
                   and should be studied together in order to create some of the
-                  prettiest systems that can branch of from the norm. That is
-                  the reason I like developing webbapplikations as well.
+                  prettiest systems that can branch off from the norm. That is
+                  the reason I like developing.
                 </p>
                 <p>
-                  On my sparetime I like keeping my body active by going to the
-                  gym and playing basketball. My love for basketball has lead me
+                  In my spare time I like keeping my body active by going to the
+                  gym and playing basketball. My love for basketball has led me
                   to pursue coaching on the side for kids age 13-14. Books
                   aren't half bad either.
                 </p>
@@ -484,85 +485,99 @@ class App extends Component {
           <h2 className="section-title">Experience</h2>
 
           <div className="row exp-container">
-            <div className="exp-link col-xs-12 col-sm-12 col-md-12 col-lg-6 img-grid">
-              <figure>
-                <Fade bottom>
+            <Fade bottom>
+              <div className="exp-link col-xs-12 col-sm-12 col-md-12 col-lg-6 img-grid">
+                <figure>
                   <img className="exp-img" src={notey} alt="" />
-                </Fade>
-                <figcaption className="fig-captions">
-                  <div className="overlay">
-                    <h5>
-                      <a href="http://finalnotey.herokuapp.com/start" target="_blank">Notey</a>
-                      <br />
-                      School project
-                      <br />
-                      Front-end and Back-end
-                    </h5>
-                  </div>
-                </figcaption>
-              </figure>
-            </div>
-            <div className="exp-link col-xs-12 col-sm-12 col-md-12 col-lg-6 img-grid">
-              <figure>
-                <Fade bottom>
+
+                  <figcaption className="fig-captions">
+                    <div className="overlay">
+                      <h5>
+                        <a
+                          href="http://finalnotey.herokuapp.com/start"
+                          target="_blank"
+                        >
+                          Notey
+                        </a>
+                        <br />
+                        School project
+                        <br />
+                        Front-end and Back-end
+                      </h5>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+            </Fade>
+            <Fade bottom>
+              <div className="exp-link col-xs-12 col-sm-12 col-md-12 col-lg-6 img-grid">
+                <figure>
                   <img className="exp-img" src={itjobs} alt="" />
-                </Fade>
-                <figcaption className="fig-captions">
-                  <div className="overlay">
-                    <h5>
-                      <a href="https://itjobsfinal.herokuapp.com/" target="_blank">
-                        IT-jobs-finder
-                      </a>
-                      <br />
-                      School project
-                      <br />
-                      Front-end and Back-end
-                    </h5>
-                  </div>
-                </figcaption>
-              </figure>
-            </div>
+
+                  <figcaption className="fig-captions">
+                    <div className="overlay">
+                      <h5>
+                        <a
+                          href="https://itjobsfinal.herokuapp.com/"
+                          target="_blank"
+                        >
+                          IT-jobs-finder
+                        </a>
+                        <br />
+                        School project
+                        <br />
+                        Front-end and Back-end
+                      </h5>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+            </Fade>
           </div>
 
           <div className="row exp-container">
-            <div className="exp-link col-xs-12 col-sm-12 col-md-12 col-lg-6 img-grid">
-              <figure>
-                <Fade bottom>
+            <Fade bottom>
+              <div className="exp-link col-xs-12 col-sm-12 col-md-12 col-lg-6 img-grid">
+                <figure>
                   <img className="exp-img" src={huddinge} alt="" />
-                </Fade>
-                <figcaption className="fig-captions">
-                  <div className="overlay">
-                    <h5>
-                      <a href="http://www.huddingebasket.se/" target="_blank">
-                        Huddinge Basketball
-                      </a>
-                      <br />
-                      Coach/Front-end/back-end
-                      <br />
-                      Stockholm
-                    </h5>
-                  </div>
-                </figcaption>
-              </figure>
-            </div>
-            <div className="exp-link col-xs-12 col-sm-12 col-md-12 col-lg-6 img-grid">
-              <figure>
-                <Fade bottom>
+
+                  <figcaption className="fig-captions">
+                    <div className="overlay">
+                      <h5>
+                        <a href="http://www.huddingebasket.se/" target="_blank">
+                          Huddinge Basketball
+                        </a>
+                        <br />
+                        Coach/Front-end/back-end
+                        <br />
+                        Stockholm
+                      </h5>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+            </Fade>
+            <Fade bottom>
+              <div className="exp-link col-xs-12 col-sm-12 col-md-12 col-lg-6 img-grid">
+                <figure>
                   <img className="exp-img" src={justvalue} alt="" />
-                </Fade>
-                <figcaption className="fig-captions">
-                  <div className="overlay">
-                    <h5>
-                      <a href="http://justvalue.se/" target="_blank">Just value</a>
-                      <br />
-                      Front-end/back-end(internship)
-                      <br />
-                      Stockholm
-                    </h5>
-                  </div>
-                </figcaption>
-              </figure>
-            </div>
+
+                  <figcaption className="fig-captions">
+                    <div className="overlay">
+                      <h5>
+                        <a href="http://justvalue.se/" target="_blank">
+                          Just value
+                        </a>
+                        <br />
+                        Front-end/back-end(internship)
+                        <br />
+                        Stockholm
+                      </h5>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+            </Fade>
           </div>
         </section>
         <section id="skills" className="non-intro page skills">
@@ -612,11 +627,11 @@ class App extends Component {
             <div className="skill col-xs-12 col-sm-6 col-md-4 col-lg-4 margin-v align-center">
               <Zoom>
                 <div className="fab-img">
-                  <img src={maya}></img>
+                  <img src={blender}></img>
                 </div>
               </Zoom>
               <Fade bottom>
-                <h3>Maya/Mudbox-combo</h3>
+                <h3>Blender</h3>
               </Fade>
             </div>
             <div className="skill col-xs-12 col-sm-6 col-md-4 col-lg-4 margin-v align-center">
@@ -645,7 +660,10 @@ class App extends Component {
                 <i className="fab fa-linkedin-in"></i>
                 <Fade bottom>
                   <h3>
-                    <a href="https://www.linkedin.com/in/ivan-sedelkin-236068191" target="_blank">
+                    <a
+                      href="https://www.linkedin.com/in/ivan-sedelkin-236068191"
+                      target="_blank"
+                    >
                       LinkedIn
                     </a>
                   </h3>
@@ -655,7 +673,9 @@ class App extends Component {
                 <i class="fas fa-file-pdf"></i>
                 <Fade bottom>
                   <h3>
-                    <a href={pdf} download="Resume_Ivan_Sedelkin">Download Resume</a>
+                    <a href={pdf} download="Resume_Ivan_Sedelkin">
+                      Download Resume
+                    </a>
                   </h3>
                 </Fade>
               </div>
@@ -705,6 +725,7 @@ class App extends Component {
             </div>
           </div>
         </section>
+        
       </div>
     );
   }
