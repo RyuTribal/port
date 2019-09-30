@@ -425,7 +425,6 @@ class App extends Component {
             </div>
           </Bounce>
         </nav>
-        <div className="circular-menu"></div>
         <section className="page intro">
           <div className="intro-content">
             <div className="content-container">
